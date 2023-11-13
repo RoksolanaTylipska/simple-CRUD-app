@@ -13,19 +13,31 @@ import Article from './components/Article/Article';
 function AppRouter() {
   const { colorMode } = useContext(AppContext);
 
-  const theme = React.useMemo(() => {
-    return createTheme({
-      palette: {
-        mode: colorMode === 'light' ? 'light' : 'dark',
-        primary: {
-          main: colorMode === 'light' ? '#2196f3' : '#90caf9',
-        },
-        background: {
-          paper: colorMode === 'light' ? '#fff' : '#121212',
-        },
+    const lightTheme = createTheme({
+    palette: {
+      mode: 'light',
+      primary: {
+        main: '#2196f3',
       },
-    });
-  }, [colorMode]);
+      background: {
+        paper: '#fff',
+      },
+    },
+  });
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#90caf9',
+      },
+      background: {
+        paper: '#121212',
+      },
+    },
+  });
+
+  const theme = colorMode === 'light' ? lightTheme : darkTheme;
 
   return (
     <ThemeProvider theme={theme}>
