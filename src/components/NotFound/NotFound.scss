@@ -1,0 +1,19 @@
+.notFound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 200px;
+
+  &__link{
+    text-decoration: none;
+    padding-top: 50px;
+    width: 200px;    
+  }
+
+  &__title{
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+}

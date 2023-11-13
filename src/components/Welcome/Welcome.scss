@@ -1,0 +1,14 @@
+.welcome{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+
+  &__title {
+    font-size: 40px;
+    padding: 50px;
+
+    @media (min-width: 640px) {
+      font-size: 90px;
+    }
+  }
+}

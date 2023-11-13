@@ -1,0 +1,19 @@
+.article {
+  padding: 40px;
+
+  &__title{
+    font-size: 20px;
+
+    @media (min-width: 640px) {
+      font-size: 50px;
+    }
+  }
+
+  &__text{
+    font-size: 15px;
+
+    @media (min-width: 640px) {
+      font-size: 20px;
+    }
+  }
+}

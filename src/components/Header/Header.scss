@@ -1,0 +1,21 @@
+.header{
+  &__login-button {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+  }
+
+  &__link-container {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+  }
+
+  &__link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+  }
+}
