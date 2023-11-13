@@ -42,19 +42,19 @@ function Login() {
 
     // eslint-disable-next-line
     if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{1,5}$/.test(email)) {
-      setEmailError("Please enter a valid email")
+      setEmailError(true)
     }
 
     if (email === "") {
-      setEmailError("Please enter your email")
+      setEmailError(true)
     }
 
     if (password.length < 7) {
-      setPasswordError("The password must be min 7 characters")
+      setPasswordError(true)
     }
 
     if (password === "") {
-      setPasswordError("Please enter a password")
+      setPasswordError(true)
     }
 
     if (userData.email === email && userData.password === password) {
@@ -80,21 +80,25 @@ function Login() {
           label="Email"
           variant="outlined"
           required={true}
+          error={emailError}
+          helperText={emailError ? "Please enter a valid email" : ''}
           onChange={event => setEmail(event.target.value)}
           value={email}
         />
-        <label className="login__error">{emailError}</label>
+        {/* <label className="login__error">{emailError}</label> */}
 
         <TextField
           id="outlined-basic"
           label="Password"
           type="password"
           variant="outlined"
+          error={passwordError}
+          helperText={passwordError ? "The password must be min 7 characters" : ''}
           required={true}
           value={password}
           onChange={event => setPassword(event.target.value)}
         />
-        <label className="login__error">{passwordError}</label>
+        {/* <label className="login__error">{passwordError}</label> */}
       </div>
 
       <div className="login__button-container">

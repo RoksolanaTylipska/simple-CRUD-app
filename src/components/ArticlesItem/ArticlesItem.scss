@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
 
+
   &__title {
     margin: 5px;
     font-size: 20px;
@@ -21,7 +22,7 @@
     position: relative;
 
     font-size: 18px;
-    color: rgb(82, 80, 80);
+    color: rgb(137, 137, 137);
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;

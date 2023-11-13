@@ -63,6 +63,12 @@ function ArticlesList() {
     setEditArticleModalWindow(false);
   };
 
+  const handleOpenModalWindow = () => {
+    setTitle('')
+    setBody('')
+    setNewArticleModalWindow(true)
+  }
+
   return (
     <div className='articles-list'>
       {articles.length === 0
@@ -84,7 +90,7 @@ function ArticlesList() {
       <Button
         sx={{ width: '200px', marginTop: "20px" }}
         variant='contained'
-        onClick={() => setNewArticleModalWindow(true)}
+        onClick={() => handleOpenModalWindow()}
       >
         Create an Article
       </Button>
