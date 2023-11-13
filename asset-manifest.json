@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-CRUD-app/static/css/main.bc080a39.css",
+    "main.js": "/simple-CRUD-app/static/js/main.e1950839.js",
+    "index.html": "/simple-CRUD-app/index.html",
+    "main.bc080a39.css.map": "/simple-CRUD-app/static/css/main.bc080a39.css.map",
+    "main.e1950839.js.map": "/simple-CRUD-app/static/js/main.e1950839.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc080a39.css",
+    "static/js/main.e1950839.js"
+  ]
+}
