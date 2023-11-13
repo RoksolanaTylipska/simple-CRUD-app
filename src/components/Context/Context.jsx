@@ -3,7 +3,10 @@ import { createContext, useState } from 'react';
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
-  const [colorMode, setColorMode] = useState(localStorage.getItem('colorMode'));
+  const savedColorMode = localStorage.getItem('colorMode');
+  const defaultColorMode = savedColorMode || 'light';
+  
+  const [colorMode, setColorMode] = useState(defaultColorMode);  
   const [loginButton, setLoginButton] = useState(localStorage.getItem('loginStatus'));
   const [loginModalWindow, setLoginModalWindow] = useState(localStorage.getItem('loginStatus'));
   const [email, setEmail] = useState('');
