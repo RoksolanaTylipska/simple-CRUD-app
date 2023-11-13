@@ -1,3 +1,8 @@
+# [DEMO LINK](https://roksolanatylipska.github.io/simple-CRUD-app/)
+
+# LOGIN: "soft-innovation@gmail.com"
+# PASSWORD: "soft123"
+
 # Simple CRUD app 
 
 This repository contains a simple CRUD application developed in React using the Material-UI official theme. The application allows users to manage a list of items, editing, deletion, and a login feature with protected routes.
@@ -6,9 +11,6 @@ This repository contains a simple CRUD application developed in React using the 
 
 ### 1. Login Screen
   The app has a login screen with hardcoded email and password for a simulated login.
-
-1. Email "soft-innovation@gmail.com"
-2. Password "soft123"
 
 ### 2. Main Dashboard
 - After a successful login, users are directed to the main dashboard.
