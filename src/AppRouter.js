@@ -16,9 +16,13 @@ function AppRouter() {
 const theme = React.useMemo(
   () =>
     createTheme({
+      primary: {
+        main: '#2196f3'
+      },
       palette: {
         mode: colorMode
       },
+      
     }),
   [colorMode],
 );

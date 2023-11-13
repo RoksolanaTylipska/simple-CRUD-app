@@ -51,7 +51,6 @@ function NewArticle({
           }
         }}
         variant='outlined'
-        className='articles-list__input'
       />
       <TextField
         label='Body'
@@ -61,18 +60,17 @@ function NewArticle({
         variant='outlined'
         multiline
         rows={5}
-        className='articles-list__input'
       />
       <div className='buttom-container'>
         <Button
-          sx={{ width: '100%' }}
+          sx={{ width: '30%' }}
           variant='contained'
           onClick={handleAddArticleClick}
         >
           Submit
         </Button>
         <Button
-          sx={{ width: '100%' }}
+          sx={{ width: '30%' }}
           variant='outlined'
           onClick={() => setNewArticleModalWindow(false)}
         >

@@ -3,7 +3,6 @@ import './EditArticle.scss'
 import { Box, Button, TextField } from '@mui/material';
 
 function EditArticle({
-  id,
   title,
   body,
   setEditArticleModalWindow,
@@ -59,7 +58,6 @@ function EditArticle({
           }
         }}
         variant="outlined"
-        className="articles-list__input"
       />
       <TextField
         label="Body"
@@ -69,14 +67,17 @@ function EditArticle({
         variant="outlined"
         multiline
         rows={5}
-        className="articles-list__input"
       />
-      <div className="button-container">
-        <Button sx={{ width: '100%' }} variant="contained" onClick={handleAddArticleClick}>
+      <div className="buttom-container">
+        <Button 
+          sx={{ width: '30%' }}
+          variant="contained" 
+          onClick={handleAddArticleClick}
+        >
           Save Changes
         </Button>
         <Button
-          sx={{ width: '100%' }}
+          sx={{ width: '30%' }}
           variant="outlined"
           onClick={() => setEditArticleModalWindow(false)}
         >
