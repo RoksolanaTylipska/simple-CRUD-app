@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/simple-CRUD-app/static/css/main.9d18caf3.css",
-    "main.js": "/simple-CRUD-app/static/js/main.ee6d5545.js",
+    "main.js": "/simple-CRUD-app/static/js/main.cacf504a.js",
     "index.html": "/simple-CRUD-app/index.html",
     "main.9d18caf3.css.map": "/simple-CRUD-app/static/css/main.9d18caf3.css.map",
-    "main.ee6d5545.js.map": "/simple-CRUD-app/static/js/main.ee6d5545.js.map"
+    "main.cacf504a.js.map": "/simple-CRUD-app/static/js/main.cacf504a.js.map"
   },
   "entrypoints": [
     "static/css/main.9d18caf3.css",
-    "static/js/main.ee6d5545.js"
+    "static/js/main.cacf504a.js"
   ]
 }
