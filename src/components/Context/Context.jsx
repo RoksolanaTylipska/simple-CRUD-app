@@ -7,7 +7,7 @@ const AppContextProvider = ({ children }) => {
   const defaultColorMode = savedColorMode || 'light';
   
   const [colorMode, setColorMode] = useState(defaultColorMode);  
-  const [loginButton, setLoginButton] = useState(localStorage.getItem('loginStatus'));
+  const [loginButton, setLoginButton] = useState(localStorage.getItem('loginStatus') || "open");
   const [loginModalWindow, setLoginModalWindow] = useState(localStorage.getItem('loginStatus'));
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
